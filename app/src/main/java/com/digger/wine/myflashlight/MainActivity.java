@@ -3,6 +3,8 @@ package com.digger.wine.myflashlight;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.os.Bundle;
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             String cameraId = cameraManager.getCameraIdList()[0];
             cameraManager.setTorchMode(cameraId, true);
             flashLightStatus = true;
-            imageFlashlight.setImageResource(R.drawable.ic_launcher_background);
+            imageFlashlight.setImageDrawable(getResources().getDrawable(R.drawable.on_botton));
         } catch (CameraAccessException e) {
         }
     }
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             String cameraId = cameraManager.getCameraIdList()[0];
             cameraManager.setTorchMode(cameraId, false);
             flashLightStatus = false;
-            imageFlashlight.setImageResource(R.drawable.ic_launcher_foreground);
+            imageFlashlight.setImageDrawable(getResources().getDrawable(R.drawable.on_botton));
         } catch (CameraAccessException e) {
         }
     }
