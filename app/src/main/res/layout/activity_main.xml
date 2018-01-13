@@ -20,4 +20,26 @@
         android:layout_above="@id/imageFlashlight"
         android:layout_marginBottom="40dp"/>
 
+    <Button
+        android:id="@+id/sendmorse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageFlashlight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="71dp"
+        android:text="Send Moris" />
+
+    <EditText
+        android:id="@+id/morsetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonEnable"
+        android:layout_below="@+id/imageFlashlight"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
 </RelativeLayout>
